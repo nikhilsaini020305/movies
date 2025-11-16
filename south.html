@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>south</title>
+    <link rel="stylesheet" href="css/south.css">
+    <link rel="stylesheet" href="movies1.css">
+    <link rel="stylesheet" href="movies2.css">
+
+</head>
+<body>
+    <h1 class="logo">Jeery Movie</h1>
+    <nav class="navbar">
+        <button class="menu-button" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links"  id="content">
+            <li><a href="#" onclick="handleClick('Home')">Home</a></li>
+            <li><a href="#" onclick="handleClick('Hollywood')">Hollywood</a></li>
+            <li><a href="#" onclick="handleClick('Bollywood')">Bollywood</a></li>
+            <li><a href="#" onclick="handleClick('Punjab')">Punjab</a></li>
+            <li><a href="#" onclick="handleClick('South')">South Movies</a></li>
+            <li><a href="#" onclick="handleClick('Web')">Web series</a></li>
+            <li><a href="#" onclick="handleClick('GENREs')">GENREs</a></li>
+            <li><a href="#" onclick="handleClick('More')">More</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Enter user name...">
+                <button onclick="searchUser()">Search</button>
+        </div>         
+    </nav><br><br>
+    <main class="main">
+        <div class="image-grid">
+            <div class="image-column">
+                <a href="#" onclick="handleClick('Daaku')"> <img src="Daaku Maharaaj/Daaku-Maharaaj-2024-Hindi-HDRip-Full-Movie-HDHub4u.Tv.jpg" alt="Image 1">Daaku Maharaaj (2025) PRE-HD [Hindi (ORG-DD2.0) & Telugu] 1080p 720p & 480p Dual Audio [x264/HC-ESub] | Full Movie</a>
+             </div>
+             <div class="image-column">
+                <a href="#" onclick="handleClick('Pushpa')"> <img src="Pushpa 2 The Rule RELOADED/Pushpa-2-Reloaded-Hindi-HDRip-Full-Movie-HDHub4u.Tv.jpg" alt="Image 1">Pushpa 2: RELOADED (2024) TRUE WEB-DL [Hindi (ORG 5.1) & Telugu] 1080p 720p & 480p [x264/HEVC] | Full Movie [Pushpa 2: The Rule]</a>
+            </div>
+            <div class="image-column">
+                <a href="#" onclick="handleClick('Rathnan')"> <img src="Rathnan Prapancha/Rathnan-Prapancha-2021-HDHub4u.Tv.jpg" alt="Image 1">Rathnan Prapancha (2021) UNCUT WEB-DL [Hindi (ORG 2.0) & Kannada] 1080p 720p & 480p Dual Audio [x264/10Bit-HEVC] | Full Movie</a>
+            </div>
+            <div class="image-column">
+                <a href="#" onclick="handleClick('Baby')"> <img src="Baby/Baby-2023-Hindi-HQ-Dub-Full-Movie-HDHub4u.Tv.jpg" alt="Image 1">Baby (2023) [HQ Hindi Dub] DS4K WEB-DL 1080p 720p 480p [x264/HEVC] HD | Full Movie [Without-ADs]</a>
+            </div>
+            <div class="image-column">
+                <a href="#" onclick="handleClick('Eagle')"> <img src="Eagle/4aKU7lkQTfuzdtQxGagxeywGnhS.jpg" alt="Image 1">Eagle</a>
+             </div>
+             <div class="image-column">
+                <a href="#" onclick="handleClick('Game')"> <img src="Game Changer/qtOGsZoLW7QceqKmsOy5nSM6Aik.jpg" alt="Image 1">Game Changer (2025) DS4K WEB-DL [Hindi (DD5.1) & Telugu] 4K 1080p 720p & 480p Dual Audio [x264/HEVC] | Full Movie</a>
+            </div>
+            <div class="image-column">
+                <a href="#" onclick="handleClick('Bhaje')"> <img src="Bhaje Vaayu Vegam/mvYvH5TYe66axlE5CII3tdwXDcF.jpg" alt="Image 1"> Bhaje Vaayu Vegam (2024) UNCUT WEB-DL [Hindi (ORG 2.0) & Telugu] 4K 1080p 720p & 480p Dual Audio [x264/10Bit-HEVC] | Full Movie</a>
+            </div>
+            <div class="image-column">
+               <a href="#" onclick="handleClick('Pottel')"> <img src="Pottel/ae9sNJ18bZnIdwZtnTx6ZaXuD5N.jpg" alt="Image 1">Pottel (2024) WEB-DL [Hindi (ORG 5.1) & Telugu] 1080p 720p & 480p Dual Audio [x264/10Bit-HEVC] | Full Movie</a>
+            </div>
+            <div class="image-column">
+                <a href="#" onclick="handleClick('Garudan')"> <img src="Garudan/Garudan-2023-HDHub4u.Tv.jpg" alt="Image 1">Garudan (2023) UNCUT WEB-DL [Hindi (ORG 2.0) & Malayalam] 4K 1080p 720p & 480p Dual Audio [x264/10Bit-HEVC] | Full Movie</a>
+            </div>
+            <div class="image-column">
+                <a href="#" onclick="handleClick('Rifle')"> <img src="Rifle Club/k1czxgmnH63A7old7hL4oNzqYMw.jpg" alt="Image 1">Rifle Club (2024) WEB-DL [Hindi (ORG 5.1) & Malayalam] 1080p 720p & 480p Dual Audio [x264/10Bit-HEVC] | Full Movie
+                </a>
+            </div>
+            <div class="image-column">
+                <a href="#" onclick="handleClick('Pani')"> <img src="Pani/Pani-2024-HDHub4u.Tv.jpg" alt="Image 1">Pani (2024) DS4K WEB-DL [Hindi (ORG 5.1) & Malayalam] 4K 1080p 720p & 480p Dual Audio [x264/10Bit-HEVC] | Full Movie</a>
+            </div>
+            <div class="image-column">
+                <a href="#" onclick="handleClick('Bachchan')"> <img src="Mr Bachchan/AAAABToivQkUmCFjdOj3WOTbgtKi2gIG_DckVKljtrfM-g2Au1lVcjnTvDGM6Vjm1siG-VJvo4TbdovGcH0ib_fSFuUsq4fisj_e3A5E.jpg" alt="Image 1">Mr Bachchan (2024) WEB-DL [Hindi (ORG 2.0) & Telugu] 1080p 720p & 480p Dual Audio [x264/10Bit-HEVC] | Full Movie</a>
+            </div>
+            <div class="image-column">
+                <a href="#" onclick="handleClick('Sorgavaasal')"> <img src="Sorgavaasal/jklU35FN5lEyJqladnCU5NPv0M8.jpg" alt="Image 1">Sorgavaasal (2024) WEB-DL [Hindi (ORG 5.1) & Tamil] 1080p 720p & 480p Dual Audio [x264/HEVC] | Full Movie</a>
+            </div>
+            <div class="image-column">
+               <a href="#" onclick="handleClick('Nishabdham')"> <img src="Nishabdham/Nishabdham-2020-HDHub4u.Tv.jpg" alt="Image 1">Nishabdham (2020) UNCUT WEB-DL [Hindi (ORG 5.1) & Telugu] 4K 1080p 720p & 480p Dual Audio [x264/HEVC] | Full Movie</a>
+            </div>
+        </div><br><br><hr><br><br>
+</main>
+<footer class="footer">
+    <div class="footer-content">
+        <p>&copy; 2025 Jeery  | All rights reserved.</p>
+        <ul class="footer-links">
+            <li><a href="#">Disclaimer</a></li>
+            <li><a href="#">Join Our Group !</a></li>
+            <li><a href="#">How To Download ?</a></li>
+            <li><a href="#">Movie Request Page</a></li>
+        </ul>
+    </div>
+</footer>
+    <script src="south.js"></script>
+    <script src="search.js"></script>
+
+</body>
+</html>

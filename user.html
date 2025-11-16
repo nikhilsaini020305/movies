@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+        body { text-align: center; font-family: Arial, sans-serif; margin: 50px; }
+        img { width: 150px; border-radius: 10px; cursor: pointer; }
+        h1 { cursor: pointer; color: blue; }
+        .error { color: red; font-weight: bold; }
+    </style>
+</head>
+<body>
+    
+    <h1 id="userName"></h1>
+    <img id="userImage" style="display:none;" onclick="openImageTab()">
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const userName = params.get('name');
+        const userImage = params.get('image');
+        const error = params.get('error');
+
+        if (userName && userImage) {
+            document.getElementById("userName").textContent = userName;
+            document.getElementById("userName").setAttribute("onclick", `openImageTab()`);
+            document.getElementById("userImage").src = userImage;
+            document.getElementById("userImage").style.display = "block";
+        } else if (error) {
+            document.body.innerHTML = `<h1 class="error">${error}</h1>`;
+        }
+
+        function onclick(fileName) {
+    // Open the file in a new tab
+    const newTab = window.open(fileName, '_blank');
+        }
+    </script>
+</body>
+</html>

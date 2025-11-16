@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">s
+    <title>Movies</title>
+    <link rel="stylesheet" href="movies.css">
+    <link rel="stylesheet" href="movies1.css">
+    <link rel="stylesheet" href="movies2.css">
+</head>
+<body>
+    <h1 class="logo">Jeery Movie</h1>
+    <nav class="navbar">
+        <button class="menu-button" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links"  id="content">
+            <li><a href="#" onclick="handleClick('Home')">Home</a></li>
+            <li><a href="#" onclick="handleClick('Hollywood')">Hollywood</a></li>
+            <li><a href="#" onclick="handleClick('Bollywood')">Bollywood</a></li>
+            <li><a href="#" onclick="handleClick('Punjab')">Punjab</a></li>
+            <li><a href="#" onclick="handleClick('South')">South Movies</a></li>
+            <li><a href="#" onclick="handleClick('Web')">Web series</a></li>
+            <li><a href="#" onclick="handleClick('GENREs')">GENREs</a></li>
+            <li><a href="#" onclick="handleClick('More')">More</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Enter user name...">
+                <button onclick="searchUser()">Search</button>
+        </div>         
+    </nav><br><br>
+    <main class="main">
+        <div class="image-grid">
+            <div class="image-column">
+                <a href="#" onclick="handleClick('Den')"> <img src="Devaki Nandana Vasudeva/Devaki-Nandana-Vasudeva-2024-HDHub4u.Tv.jpg" alt="Image 1">Den of Thieves 2: Pantera (2025) WEB-DL [English DD5.1] 4K 1080p 720p & 480p [x264/10Bit-HEVC] | Full Movie</a>
+            </div>
+            <div class="image-column">
+                <a href="#" onclick="handleClick('Marco')"> <img src="Razakar/Razakar-2024-HDHub4u.Tv.jpg" alt="Image 1">Razakar (2024) DS4K WEB-DL [Hindi (ORG DD2.0) & Telugu] 4K 1080p 720p & 480p Dual Audio [x264/HEVC] | Full Movie</a>
+            </div>
+            <div class="image-column">
+                <a onclick="handleClick('Tabaah')"> <img src="Thandel/ekgwx6fjFkn8lbvrup4moGGtPZY.jpg" alt="Image 1">Thandel (2025) HQ PRE-HD [Hindi (ORG-DD2.0) & Telugu (DD2.0)] 1080p 720p & 480p Dual Audio [x264/HEVC] | Full Movie</a>
+            </div>
+            <div class="image-column">
+               <a href="#" onclick="handleClick('Eagle')"> <img src="Badass RaviKumar/4PHX3qbWQgez4aMN95S8YnFAlnF.jpg" alt="Image 1">Badass RaviKumar (2025) HQ PRE-HD [Hindi ORG-DD2.0] 1080p 720p & 480p [x264/HEVC] | Full Movie</a>
+            </div>
+            <div class="image-column">
+                <a href="#" onclick="handleClick('SkyForce')"> <img src="Loveyapa/ohHiDAwaOo6R1ovMgmUhrBuvknU.jpg" alt="Image 1">Loveyapa (2025) HQ PRE-HD [Hindi ORG-DD2.0] 1080p 720p & 480p [x264/HEVC] | Full Movie</a>
+            </div>
+            <div class="image-column">
+                <a href="#" onclick="handleClick('didi')"> <img src="didi/3UCTNaZgxW6BbeHMMTe6uL07MpV.jpg" alt="Image 1">Dìdi (2024) BluRay [Hindi (ORG 2.0) & English] 4K 1080p 720p & 480p Dual Audio [x264/10Bit-HEVC] | Full Movie</a>
+            </div>
+            <div class="image-column">
+                <a href="#" onclick="handleClick('sakamoto')"> <img src="Sakamoto/qTNIxDIzKjLLuS17fxdXjcKAlW7.jpg" alt="Image 1">SAKAMOTO DAYS (Season 1) WEB-DL [Hindi (ORG 5.1) & English] 1080p 720p & 480p [x264/ESub] | NF Series | [EP-03 Added]</a>
+            </div>
+            <div class="image-column">
+                <a href="#" onclick="handleClick('fateh')"> <img src="Fateh/Fateh-2025-HDHub4u.Tv.jpg" alt="Image 1"> Fateh (2025) DS4K WEB-DL [Hindi DD5.1] 4K 1080p 720p & 480p [x264/HEVC] | Full Movie</a>
+            </div>
+            <div class="image-column">
+                <a href="#" onclick="handleClick('power')"> <img src="powerpaanch/Power.of_.Paanch.S01.Poster.jpg" alt="Image 1">Power of Paanch (Season 1) WEB-DL Hindi 4K 1080p 720p & 480p x264 DDP5.1 | Hotstar Series | EP 12 Added</a>
+            </div>
+            <div class="image-column">
+               <a href="#" onclick="handleClick('Daaku')"> <img src="Daaku Maharaaj/Daaku-Maharaaj-2024-Hindi-HDRip-Full-Movie-HDHub4u.Tv.jpg" alt="Image 1">Daaku Maharaaj (2025) PRE-HD [Hindi (ORG-DD2.0) & Telugu] 1080p 720p & 480p Dual Audio [x264/HC-ESub] | Full Movie</a>
+            </div>
+            <div class="image-column">
+                <a href="#" onclick="handleClick('Twilight')"> <img src="Twilight of the Warriors Walled/h0tunBO4tMjvKVVG7fXqHgwOr5C.jpg" alt="Image 1">Twilight of the Warriors: Walled In (2024) BluRay [Hindi (ORG 2.0) & Chinese] 1080p 720p & 480p Dual Audio [x264/10Bit-HEVC] | Full Movie</a>
+            </div>
+            <div class="image-column">
+                <a href="#" onclick="handleClick('Game')"> <img src="Game Changer/qtOGsZoLW7QceqKmsOy5nSM6Aik.jpg" alt="Image 1">Game Changer (2025) DS4K WEB-DL [Hindi (DD5.1) & Telugu] 4K 1080p 720p & 480p Dual Audio [x264/HEVC] | Full Movie</a>
+            </div>
+            <div class="image-column">
+                <a href="#" onclick="handleClick('pitt')"> <img src="pitt/6fMGktEDXMZZPACJ5cWkVQ6TSte.jpg" alt="Image 1">The Pitt (Season 1) WEB-DL [Hindi (ORG 2.0) & English] 1080p 720p & 480p [x264/10Bit-HEVC] | HBO Series | [EP-04 Added]</a>
+            </div>
+            <div class="image-column">
+                <a href="#" onclick="handleClick('sonic')"> <img src="sonic/sonic.jpg" alt="Image 1">Sonic the Hedgehog 3 (2024) WEB-DL [Hindi (DD5.1) & English] 4K 1080p 720p & 480p Dual Audio [x264/10Bit-HEVC] | Full Movie</a>
+            </div>  
+            <div class="image-column">
+                <a href="#" onclick="handleClick('Bhaje')"> <img src="Bhaje Vaayu Vegam/mvYvH5TYe66axlE5CII3tdwXDcF.jpg" alt="Image 1"> Bhaje Vaayu Vegam (2024) UNCUT WEB-DL [Hindi (ORG 2.0) & Telugu] 4K 1080p 720p & 480p Dual Audio [x264/10Bit-HEVC] | Full Movie</a>
+            </div>
+            <div class="image-column">
+               <a href="#" onclick="handleClick('Butcher')"> <img src="Butcher’s Crossing/2KdkRsYuzYPlJMLrV39gdjY3WkS.jpg" alt="Image 1">Butcher’s Crossing (2022) BluRay [Hindi (ORG 2.0) & English] 4K 1080p 720p & 480p Dual Audio [x264/10Bit-HEVC] | Full Movie</a>
+            </div>
+            <div class="image-column">
+                <a href="#" onclick="handleClick('Hisaab')"> <img src="Hisaab Barabar/mGCCI7nfBemCAetxyvIgZBBbPCI.jpg" alt="Image 1">Hisaab Barabar (2025) WEB-DL [Hindi DD5.1] 4K 1080p 720p & 480p [x264/HEVC] | Full Movie</a>
+            </div>
+            <div class="image-column">
+                <a href="#" onclick="handleClick('Night')"> <img src="The Night Agent/4c5yUNcaff4W4aPrkXE6zr7papX.jpg" alt="Image 1">The Night Agent (Season 2) WEB-DL [Hindi (ORG 5.1) & English] 1080p 720p & 480p [x264/10Bit-HEVC] | [ALL Episodes] | NF Series</a>
+            </div>
+            <div class="image-column">
+                <a href="#" onclick="handleClick('Moana2')"> <img src="Moana 2/2p0wC52iBxnkkMdGz43dT0qbckO.jpg" alt="Image 1">Moana 2 (2024) WEB-DL [Hindi (LiNE) & English] 4K 1080p 720p & 480p Dual Audio [x264/10Bit-HEVC] | Full Movie</a>
+            </div>
+            <div class="image-column">
+                <a href="#" onclick="handleClick('Chaal')"> <img src="Chaal Jeevi Laiye/Chaal-Jeevi-Laiye-2019-Gujrati-HDRip-Full-Movie-HDHub4u.Tv06549485b22ef850.jpg" alt="Image 1">Chaal Jeevi Laiye (2019) WEB-DL [Gujarati DD5.1] 1080p 720p & 480p [x264/HEVC] | Full Movie [Exclusive By HDHub4u]</a>
+            </div>
+              <div class="image-column">
+                <a href="#" onclick="handleClick('Pushpa')"> <img src="Pushpa 2 The Rule RELOADED/Pushpa-2-Reloaded-Hindi-HDRip-Full-Movie-HDHub4u.Tv.jpg" alt="Image 1">Pushpa 2: RELOADED (2024) TRUE WEB-DL [Hindi (ORG 5.1) & Telugu] 1080p 720p & 480p [x264/HEVC] | Full Movie [Pushpa 2: The Rule]</a>
+            </div>
+            <div class="image-column">
+               <a href="#" onclick="handleClick('Beast')"> <img src="Beast Games (Season 1)/3itZlypnOcVcqI5xxyO6nvJ52yM.jpg" alt="Image 1">Beast Games (Season 1) WEB-DL [Hindi (ORG 2.0) & English] 1080p 720p & 480p [x264/ESub] | PrimeVideo Series | [EP 07 Added]</a>
+            </div>
+            <div class="image-column">
+                <a href="#" onclick="handleClick('Azaad')"> <img src="Azaad/Azaad-2025-Bollywood-Hindi-Movie-HQCam-(filmyfly.esq).gif" alt="Image 1">Azaad (2025) PRE-HD [Hindi ORG-DD2.0] 1080p 720p & 480p [x264/HEVC] | Full Movie</a>
+            </div>
+            <div class="image-column">
+                <a href="#" onclick="handleClick('Emergency')"> <img src="Emergency/download.jpg" alt="Image 1">Emergency (2025) PRE-HD [Hindi ORG-DD2.0] 1080p 720p & 480p [x264/HEVC] | Full Movie</a>
+            </div>
+            <div class="image-column">
+                <a href="#" onclick="handleClick('Killer')"> <img src="The Killer’s Game/download (3).jpg" alt="Image 1">movies</a>
+            </div>
+            <div class="image-column">
+                <a href="#" onclick="handleClick('Baby')"> <img src="Baby/Baby-2023-Hindi-HQ-Dub-Full-Movie-HDHub4u.Tv.jpg" alt="Image 1">Baby (2023) [HQ Hindi Dub] DS4K WEB-DL 1080p 720p 480p [x264/HEVC] HD | Full Movie [Without-ADs]</a>
+            </div>
+            <div class="image-column">
+               <a href="#" onclick="handleClick('Spider')"> <img src="Your Friendly Neighborhood Spider-Man/kjcsNeqF52YUQ2rUBGLMHwLkxvR.jpg" alt="Image 1">Your Friendly Neighborhood Spider-Man (Season 1) WEB-DL English 4K 1080p 720p & 480p x264 DD5.1 | DSNP Series | EP 02 Added</a>
+            </div>
+            <div class="image-column">
+                <a href="#" onclick="handleClick('Storyteller')"> <img src="The Storyteller/dvvcO7hm4kWGz5dnCXAwpVK8x95.jpg" alt="Image 1">The Storyteller (2022) WEB-DL [Hindi 2.0] 1080p 720p & 480p [x264/HEVC] | Full Movie</a>
+            </div>
+            <div class="image-column">
+                <a href="#" onclick="handleClick('Conjuring')"> <img src="The Conjuring/xbSuFiJbbBWCkyCCKIMfuDCA4yV.jpg" alt="Image 1">The Conjuring: The Devil Made Me Do It (2021) BluRay [Hindi (ORG 5.1) & English] 4K 1080p 720p & 480p Dual Audio [x264/ESubs] | Full Movie
+                </a>
+            </div>
+            <div class="image-column">
+                <a href="#" onclick="handleClick('Zack')"> <img src="Zack Snyder’s Justice League/tnAuB8q5vv7Ax9UAEje5Xi4BXik.jpg" alt="Image 1">Zack Snyder’s Justice League (2021) BluRay [English DD5.1] 4K 1080p 720p & 480p [x264/Esubs] | Full Movie</a>
+            </div>
+        </div><br><br><hr><br><br>
+</main>
+<footer class="footer">
+    <div class="footer-content">
+        <p>&copy; 2025 Jeery  | All rights reserved.</p>
+        <ul class="footer-links">
+            <li><a href="#">Disclaimer</a></li>
+            <li><a href="#">Join Our Group !</a></li>
+            <li><a href="#">How To Download ?</a></li>
+            <li><a href="#">Movie Request Page</a></li>
+        </ul>
+    </div>
+</footer>
+    <script src="movies.js"></script>
+    <script src="search.js">
+        
+    </script>
+</body>
+</html>

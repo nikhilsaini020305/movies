@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hollywood</title>
+    <link rel="stylesheet" href="css/Hollywood.css">
+    <link rel="stylesheet" href="movies1.css">
+    <link rel="stylesheet" href="movies2.css">
+</head>
+<body>
+    <h1 class="logo">Jeery Movie</h1>
+    <nav class="navbar">
+        <button class="menu-button" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links"  id="content">
+            <li><a href="#" onclick="handleClick('Home')">Home</a></li>
+            <li><a href="#" onclick="handleClick('Hollywood')">Hollywood</a></li>
+            <li><a href="#" onclick="handleClick('Bollywood')">Bollywood</a></li>
+            <li><a href="#" onclick="handleClick('Punjab')">Punjab</a></li>
+            <li><a href="#" onclick="handleClick('South')">South Movies</a></li>
+            <li><a href="#" onclick="handleClick('Web')">Web series</a></li>
+            <li><a href="#" onclick="handleClick('GENREs')">GENREs</a></li>
+            <li><a href="#" onclick="handleClick('More')">More</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Enter user name...">
+                <button onclick="searchUser()">Search</button>
+        </div>         
+    </nav><br><br>
+    <main class="main">
+        <div class="image-grid">
+            <div class="image-column">
+                <a href="#" onclick="handleClick('Conjuring')"> <img src="The Conjuring/xbSuFiJbbBWCkyCCKIMfuDCA4yV.jpg" alt="Image 1">The Conjuring: The Devil Made Me Do It (2021) BluRay [Hindi (ORG 5.1) & English] 4K 1080p 720p & 480p Dual Audio [x264/ESubs] | Full Movie
+                </a>
+            </div>
+            <div class="image-column">
+                <a href="#" onclick="handleClick('Conjuring1')"> <img src="The Conjuring/zEqyD0SBt6HL7W9JQoWwtd5Do1T.jpg" alt="Image 1">The Conjuring 2 (2016) BluRay [Hindi (ORG 5.1) & English] 1080p 720p & 480p Dual Audio [x264/ESubs] | Full Movie</a>
+            </div>
+            <div class="image-column">
+                <a href="#" onclick="handleClick('Spider')"> <img src="Your Friendly Neighborhood Spider-Man/kjcsNeqF52YUQ2rUBGLMHwLkxvR.jpg" alt="Image 1">Your Friendly Neighborhood Spider-Man (Season 1) WEB-DL English 4K 1080p 720p & 480p x264 DD5.1 | DSNP Series | EP 02 Added</a>
+             </div>
+             <div class="image-column">
+                <a href="#" onclick="handleClick('Zack')"> <img src="Zack Snyder’s Justice League/tnAuB8q5vv7Ax9UAEje5Xi4BXik.jpg" alt="Image 1">Zack Snyder’s Justice League (2021) BluRay [English DD5.1] 4K 1080p 720p & 480p [x264/Esubs] | Full Movie</a>
+            </div>
+            
+            <div class="image-column">
+                <a href="#" onclick="handleClick('Conjuring2')"> <img src="The Conjuring/wVYREutTvI2tmxr6ujrHT704wGF.jpg" alt="Image 1">The Conjuring (2013) BluRay [Hindi (ORG 2.0) & English] 1080p 720p & 480p Dual Audio [x264/ESubs] | Full Movie</a>
+            </div>
+            <div class="image-column">
+                <a href="#" onclick="handleClick('Red')"> <img src="Red Sparrow/oy6EYWzTwcIMjQYTS6uXS7JXGOx.jpg" alt="Image 1">Red Sparrow (2018) BluRay [Hindi (ORG 5.1) & English] 4K 1080p 720p & 480p Dual Audio [x264/10Bit-HEVC] | Full Movie</a>
+            </div>
+            <div class="image-column">
+                <a href="#" onclick="handleClick('Aquaman')"> <img src="Aquaman/ufl63EFcc5XpByEV2Ecdw6WJZAI.jpg" alt="Image 1">Aquaman (2018) IMAX BluRay [Hindi (ORG 5.1) & English] 1080p 720p & 480p Dual Audio [x264/10Bit-HEVC] | Full Movie</a>
+            </div>
+            <div class="image-column">
+                <a href="#" onclick="handleClick('Beast')"> <img src="Beast Games (Season 1)/3itZlypnOcVcqI5xxyO6nvJ52yM.jpg" alt="Image 1">Beast Games (Season 1) WEB-DL [Hindi (ORG 2.0) & English] 1080p 720p & 480p [x264/ESub] | PrimeVideo Series | [EP 07 Added]</a>
+             </div>
+            <div class="image-column">
+                <a href="#" onclick="handleClick('Annabelle')"> <img src="Annabelle/yLsuU2P2SpDYFwtZQ7dtfVAf6TE.jpg" alt="Image 1">Annabelle (2014) BluRay [Hindi (ORG 5.1) & English] 1080p 720p & 480p Dual Audio [x264/ESubs] | Full Movie</a>
+            </div>
+            <div class="image-column">
+                <a href="#" onclick="handleClick('Annabelle1')"> <img src="Annabelle/tb86j8jVCVsdZnzf8I6cIi65IeM.jpg" alt="Image 1">Annabelle: Creation (2017) BluRay [Hindi (ORG 5.1) & English] 1080p 720p & 480p Dual Audio [x264/ESubs] | Full Movie
+                </a>
+            </div>
+            <div class="image-column">
+                <a href="#" onclick="handleClick('Annabelle2')"> <img src="Annabelle/qWsHMrbg9DsBY3bCMk9jyYCRVRs.jpg" alt="Image 1">Annabelle Comes Home (2019) BluRay [Hindi (ORG 5.1) & English] 1080p 720p & 480p Dual Audio [x264/ESubs] | Full Movie</a>
+            </div>
+            <div class="image-column">
+               <a href="#" onclick="handleClick('American')"> <img src="American Manhunt O.J. Simpson/oSjKuhSXcKfTzEDiQyDD4i1wCCE.jpg" alt="Image 1">American Manhunt: O.J. Simpson (Season 1) WEB-DL [Hindi (ORG 5.1) & English] 1080p 720p & 480p x264 Dual Audio DD5.1 | NF Series</a>
+            </div>
+            <div class="image-column">
+                <a href="#" onclick="handleClick('Bad')"> <img src="Bad Genius/iPs5OlKJsFVFW9XyskRVvQBmHC2.jpg" alt="Image 1">Bad Genius (2024) WEB-DL [Hindi (ORG 2.0) & English] 1080p 720p & 480p Dual Audio [x264/10Bit-HEVC] | Full Movie</a>
+            </div>
+            <div class="image-column">
+                <a href="#" onclick="handleClick('Count')"> <img src="The Count of Monte Cristo/sAT1P3FGhtJ68anUyJScnMu8t1l.jpg" alt="Image 1">The Count of Monte Cristo (2024) BluRay [Hindi (ORG 2.0) & English] 4K 1080p 720p & 480p Dual Audio [x264/10Bit-HEVC] | Full Movie
+                </a>
+            </div>
+        </div><br><br><hr><br><br>
+</main>
+<footer class="footer">
+    <div class="footer-content">
+        <p>&copy; 2025 Jeery  | All rights reserved.</p>
+        <ul class="footer-links">
+            <li><a href="#">Disclaimer</a></li>
+            <li><a href="#">Join Our Group !</a></li>
+            <li><a href="#">How To Download ?</a></li>
+            <li><a href="#">Movie Request Page</a></li>
+        </ul>
+    </div>
+</footer>
+    <script src="Hollywood.js"></script>
+    <script src="search.js"></script>
+
+</body>
+</html>

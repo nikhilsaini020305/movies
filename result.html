@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="styles.css">
+  <style>
+   
+  </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Search Results</h1>
+        <div id="result"></div>
+        <button onclick="goBack()">Go Back</button>
+    </div>
+
+    <script>
+        // Simulated storage for images and corresponding files
+        const dataStorage = {
+            "apple": { text: "This is an apple.", images: ["Razakar/Razakar-2024-HDHub4u.Tv.jpg",],files: ["../Razakar/Razakar.html ", "apple2.pdf"] },
+            "apple1": { text: "This is an apple.", images: ["Razakar/Razakar-2024-HDHub4u.Tv.jpg",],files: ["../Razakar/Razakar.html ", "apple2.pdf"] },
+            "banana": { text: "This is a banana.", images: ["../Devaki Nandana Vasudeva/Devaki-Nandana-Vasudeva-2024-HDHub4u.Tv.jpg", "banana2.jpg"], files: ["../Devaki Nandana Vasudeva/Devaki Nandan Vasu deva.html", "banana2.pdf"] },
+            "Razakar": { text: "This is an Razakar.", images: ["Razakar/Razakar-2024-HDHub4u.Tv.jpg",],files: ["../Razakar/Razakar.html ", "apple2.pdf"] },
+            "cat": { text: "This is a cat.", images: ["cat1.jpg", "cat2.jpg"], files: ["cat1.pdf", "cat2.pdf"] }
+        };
+
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        function displayResult() {
+            const query = getQueryParam("q");
+            const resultDiv = document.getElementById("result");
+
+            if (dataStorage[query]) {
+                let content = `<p>${dataStorage[query].text}</p>`;
+                dataStorage[query].images.forEach((image, index) => {
+                    content += `<div>
+                        <img src="${image}" alt="${query}" onclick="openFile('${dataStorage[query].files[index]}')" width="300">
+                        <p>Click image to open: <a href="${dataStorage[query].files[index]}" target="_blank">${dataStorage[query].files[index]}</a></p>
+                    </div>`;
+                });
+                resultDiv.innerHTML = content;
+            } else {
+                resultDiv.innerHTML = `<p class="error">Error: Data not found!</p>`;
+            }
+        }
+
+        function openFile(fileSrc) {
+            window.open(fileSrc, '_blank');
+        }
+
+        function goBack() {
+            window.close();
+        }
+
+        window.onload = displayResult;
+    </script>
+</body>
+</html>
